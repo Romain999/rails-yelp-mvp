@@ -1,0 +1,10 @@
+<p>
+  <strong>Commenter:</strong>
+  <%= review.content %>
+</p>
+
+<p>
+  <%= link_to 'Destroy review', [review.restaurant, review],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>
